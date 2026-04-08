@@ -89,9 +89,9 @@ extension CleanupCategory {
                 paths: [Constants.Paths.trash]
             ),
             CleanupCategory(
-                name: "Project Artifacts (Node, Next, Build)",
+                name: "Node Modules (30g+)",
                 icon: "folder.badge.gearshape",
-                description: "Proje bazlı ağır dosyalar ve derleme çıktıları (node_modules, .next, dist, build).",
+                description: "30 günden uzun süredir erişilmeyen node_modules klasörleri.",
                 color: .indigo,
                 paths: [Constants.Paths.userHome]
             ),

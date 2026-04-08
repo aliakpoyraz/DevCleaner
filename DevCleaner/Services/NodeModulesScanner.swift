@@ -42,12 +42,7 @@ actor NodeModulesScanner {
         let fm = FileManager.default
         let thresholdDays = Constants.NodeModules.accessThresholdDays
         let blacklist = Constants.systemBlacklist
-        let targetFolders: Set<String> = [
-            Constants.NodeModules.folderName,
-            ".next",
-            "dist",
-            "build"
-        ]
+        let folderName = Constants.NodeModules.folderName
 
         let threshold = Calendar.current.date(
             byAdding: .day,
@@ -82,9 +77,9 @@ actor NodeModulesScanner {
             )
 
             guard resourceValues?.isDirectory == true else { continue }
-            guard targetFolders.contains(url.lastPathComponent) else { continue }
+            guard url.lastPathComponent == folderName else { continue }
 
-            // Hedef klasörün altına inme
+            // node_modules altına inme
             enumerator.skipDescendants()
 
             let accessDate = resourceValues?.contentAccessDate ?? Date()
