@@ -1,10 +1,10 @@
-# DevCleaner 💎
+# DevCleaner 
 
 ## 🇺🇸 English
 
 DevCleaner is a lightweight and high-performance dashboard designed for macOS-based developers to clean up massive amounts of cache and log files that accumulate during the development process. 
 
-### 📥 Download
+### Download
 You can download the latest version of DevCleaner as a **.dmg** file from the **[Releases](https://github.com/aliakpoyraz/DevCleaner/releases)** section.
 <img src="DevCleaner/Setup.png" alt="DevCleaner Setup Guide" width="800" />
 
@@ -12,20 +12,20 @@ You can download the latest version of DevCleaner as a **.dmg** file from the **
 
 <img src="DevCleaner/Screenshot-2.png" alt="DevCleaner Screenshot 2" width="1200" />
 
-### 🚀 Key Features
+### Key Features
 - **Simplified Dashboard**: A single-view architecture for focused cleanup.
 - **Disk Space Insights**: Real-time display of your system drive name and used/total storage.
 - **Smart Scanning**: Automatically identifies `node_modules` folders older than 30 days.
 - **Privacy Centric**: Uses secure, App Sandbox compliant file access methods.
 - **Premium Aesthetics**: A modern Red-Orange themed UI with smooth transitions.
 
-### 🛠️ Tech Stack
+### Tech Stack
 - **Language**: Swift 5.10+
 - **Framework**: SwiftUI
 - **Architecture**: MVVM
 - **Access**: Security-Scoped Bookmarks (macOS App Sandbox)
 
-### 📂 Scanned Directories
+### Scanned Directories
 The application precisely scans and manages the following locations:
 - **Xcode DerivedData**: `~/Library/Developer/Xcode/DerivedData`
 - **User Cache Files**: `~/Library/Caches`
@@ -42,7 +42,7 @@ The application precisely scans and manages the following locations:
 - **Docker Artifacts**: `~/Library/Containers/com.docker.docker/Data/vms/0/data/`
 - **Flutter & Dart**: `~/.pub-cache` & `~/Library/Caches/DartStore`
 
-### ⚙️ Installation
+### Installation
 1. Clone the repository:
    ```bash
    git clone git@github.com:aliakpoyraz/DevCleaner.git
@@ -57,23 +57,23 @@ The application precisely scans and manages the following locations:
 
 DevCleaner, macOS kullanan yazılım geliştiricilerin (iOS, Web, Backend) süreç içerisinde sistemlerinde biriken devasa boyutlardaki önbellek ve log dosyalarını zahmetsizce temizlemeleri için geliştirilmiş yüksek performanslı bir araçtır.
 
-### 📥 İndir
+### İndir
 DevCleaner'ın son sürümünü **.dmg** dosyası olarak **[Releases (Sürümler)](https://github.com/aliakpoyraz/DevCleaner/releases)** bölümünden kolayca indirebilirsiniz.
 
-### 🚀 Öne Çıkan Özellikler
+### Öne Çıkan Özellikler
 - **Sadeleştirilmiş Panel**: Karmaşadan uzak, tek ekranlı dashboard mimarisi.
 - **Disk Analizi**: Sistem birim adını ve "Kullanılan / Toplam" alan bilgisini anlık gösterir.
 - **Akıllı Tarama**: 30 günden eski `node_modules` klasörlerini otomatik olarak tespit eder.
 - **Güvenlik Odaklı**: App Sandbox uyumlu, güvenli dosya erişim yöntemlerini kullanır.
 - **Premium Tasarım**: Kırmızı-Turuncu gradyanlarla modern ve akıcı bir arayüz.
 
-### 🛠️ Teknoloji Yığını
+### Teknoloji Yığını
 - **Dil**: Swift 5.10+
 - **Framework**: SwiftUI
 - **Mimari**: MVVM
 - **Erişim**: Security-Scoped Bookmarks (macOS App Sandbox)
 
-### 📂 Taranan Dizinler
+### Taranan Dizinler
 Uygulama aşağıdaki dizinleri hassas bir şekilde tarar ve yönetir:
 - **Xcode DerivedData**: `~/Library/Developer/Xcode/DerivedData`
 - **Kullanıcı Önbellekleri**: `~/Library/Caches`
@@ -90,7 +90,7 @@ Uygulama aşağıdaki dizinleri hassas bir şekilde tarar ve yönetir:
 - **Docker Dosyaları**: `~/Library/Containers/com.docker.docker/Data/vms/0/data/`
 - **Flutter ve Dart**: `~/.pub-cache` & `~/Library/Caches/DartStore`
 
-### ⚙️ Kurulum Adımları
+### Kurulum Adımları
 1. Repoyu klonlayın:
    ```bash
    git clone git@github.com:aliakpoyraz/DevCleaner.git
