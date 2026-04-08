@@ -1,0 +1,30 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Xcode
+build/
+DerivedData/
+*.xcodeproj/xcuserdata/
+*.xcworkspace/xcuserdata/
+*.xcuserstate
+*.xccheckout
+*.moved-aside
+DerivedData
+*.hmap
+*.ipa
+*.db.lock
+*.snippets
+
+# Swift Package Manager
+.build/
+.swiftpm/
+
+# Dependency Directories
+Pods/
+Carthage/Checkouts/
+vendor/
+
+# Local configuration
+.env
