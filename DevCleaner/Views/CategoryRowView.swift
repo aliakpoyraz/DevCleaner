@@ -34,11 +34,11 @@ struct CategoryRowView: View {
 
             // Kategori Bilgisi
             VStack(alignment: .leading, spacing: 2) {
-                Text(category.name)
+                Text(LocalizedStringKey(category.name))
                     .font(.system(size: 13, weight: .semibold))
                     .foregroundColor(.primary)
 
-                Text(category.description)
+                Text(LocalizedStringKey(category.description))
                     .font(.system(size: 11))
                     .foregroundColor(.secondary)
                     .lineLimit(1)
@@ -56,7 +56,7 @@ struct CategoryRowView: View {
             Button {
                 Task { await onScan() }
             } label: {
-                Text(category.status == .done ? "Yeniden Tara" : "Tara")
+                Text(category.status == .done ? "Rescan" : "Scan")
                     .font(.system(size: 11, weight: .medium))
                     .padding(.horizontal, 10)
                     .padding(.vertical, 4)
@@ -101,11 +101,11 @@ struct CategoryRowView: View {
     private var statusBadge: some View {
         switch category.status {
         case .done:
-            Label("Hazır", systemImage: "checkmark")
+            Label("Ready", systemImage: "checkmark")
                 .font(.system(size: 10, weight: .medium))
                 .foregroundColor(.green)
         case .error(let msg):
-            Label("Hata", systemImage: "exclamationmark.triangle")
+            Label("Error", systemImage: "exclamationmark.triangle")
                 .font(.system(size: 10, weight: .medium))
                 .foregroundColor(.orange)
                 .help(msg)

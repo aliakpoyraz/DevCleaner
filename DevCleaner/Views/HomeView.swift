@@ -19,9 +19,9 @@ struct HomeView: View {
                 Divider()
             }
 
-            // ── Kategori Listesi ─────────────────────────────
+            // Kategori Listesi
             HStack {
-                Text("Kategoriler")
+                Text("Categories")
                     .font(.system(size: 13, weight: .bold))
                     .foregroundColor(.secondary)
 
@@ -30,7 +30,7 @@ struct HomeView: View {
                 Button {
                     vm.toggleAllSelection()
                 } label: {
-                    Text(vm.isAllSelected ? "Tümünü Kaldır" : "Tümünü Seç")
+                    Text(vm.isAllSelected ? "Deselect All" : "Select All")
                         .font(.system(size: 11, weight: .medium))
                         .foregroundColor(.accentColor)
                 }
@@ -66,7 +66,7 @@ struct HomeView: View {
                 Button {
                     vm.showSettingsView = true
                 } label: {
-                    Label("Ayarlar", systemImage: "gearshape")
+                    Label("Settings", systemImage: "gearshape")
                 }
             }
         }
@@ -81,21 +81,21 @@ struct HomeView: View {
             SettingsView()
         }
         .confirmationDialog(
-            "Seçili \(FileSizeFormatter.string(from: vm.totalSelectedSize)) silinecek.",
+            Text(String(localized: "Selected \(FileSizeFormatter.string(from: vm.totalSelectedSize)) will be deleted.")),
             isPresented: $vm.showCleanConfirmation,
             titleVisibility: .visible
         ) {
-            Button("Temizle", role: .destructive) {
+            Button("Clean", role: .destructive) {
                 Task { await vm.cleanSelected() }
             }
-            Button("İptal", role: .cancel) {}
+            Button("Cancel", role: .cancel) {}
         } message: {
             Text(vm.useTrash
-                 ? "Dosyalar çöp kutusuna taşınacak."
-                 : "Bu işlem geri alınamaz. Dosyalar kalıcı olarak silinecek.")
+                 ? "Files will be moved to the trash."
+                 : "This action cannot be undone. Files will be permanently deleted.")
         }
-        .alert("Bazı dosyalar silinemedi", isPresented: .constant(vm.errorMessage != nil)) {
-            Button("Tamam") { vm.errorMessage = nil }
+        .alert("Some files couldn't be deleted", isPresented: .constant(vm.errorMessage != nil)) {
+            Button("OK") { vm.errorMessage = nil }
         } message: {
             Text(vm.errorMessage ?? "")
         }
@@ -119,14 +119,14 @@ struct HomeView: View {
                 if vm.isScanning {
                     HStack(spacing: 8) {
                         ProgressView().scaleEffect(0.5)
-                        Text(vm.scanningCategoryName)
+                        Text(LocalizedStringKey(vm.scanningCategoryName))
                             .font(.system(size: 12))
                             .foregroundColor(.secondary)
                     }
                 } else {
                     Text(vm.hasAnyScanned
-                         ? "temizlenebilir alan"
-                         : "Sisteminizi taramak için 'Tümünü Tara'ya basın")
+                         ? "cleanable space"
+                         : "Press 'Scan All' to scan your system")
                         .font(.system(size: 12))
                         .foregroundColor(.secondary)
                 }
@@ -135,11 +135,11 @@ struct HomeView: View {
             // Disk Durum Barı (Merkezi Tasarım)
             VStack(spacing: 6) {
                 HStack {
-                    Text(vm.diskSpace.volumeName)
+                    Text(LocalizedStringKey(vm.diskSpace.volumeName))
                         .font(.system(size: 11, weight: .medium))
                         .foregroundColor(.secondary)
                     Spacer()
-                    Text("\(vm.diskSpace.usedFormatted) / \(vm.diskSpace.totalFormatted) kullanıldı")
+                    Text("\(vm.diskSpace.usedFormatted) / \(vm.diskSpace.totalFormatted) used")
                         .font(.system(size: 11))
                         .foregroundColor(.secondary)
                 }
@@ -173,9 +173,9 @@ struct HomeView: View {
                 .foregroundColor(.orange)
 
             VStack(alignment: .leading, spacing: 2) {
-                Text("Erişim İzni Gerekli")
+                Text("Permission Required")
                     .font(.system(size: 12, weight: .bold))
-                Text("Uygulamanın sistem dosyalarını tarayabilmesi için ana dizine erişim vermeniz gerekiyor.")
+                Text("The app needs access to your home directory to scan system files.")
                     .font(.system(size: 10))
                     .foregroundColor(.secondary)
                     .fixedSize(horizontal: false, vertical: true)
@@ -186,7 +186,7 @@ struct HomeView: View {
             Button {
                 Task { await vm.requestAccess() }
             } label: {
-                Text("İzin Ver")
+                Text("Grant Permission")
                     .font(.system(size: 11, weight: .medium))
                     .padding(.horizontal, 10)
                     .padding(.vertical, 4)
@@ -208,7 +208,7 @@ struct HomeView: View {
             } label: {
                 HStack(spacing: 6) {
                     Image(systemName: "magnifyingglass")
-                    Text("Tümünü Tara")
+                    Text("Scan All")
                 }
                 .font(.system(size: 13, weight: .medium))
                 .frame(maxWidth: .infinity)
@@ -226,9 +226,11 @@ struct HomeView: View {
                     } else {
                         Image(systemName: "trash.fill")
                     }
-                    Text(vm.isCleaning
-                         ? "Temizleniyor..."
-                         : "Şimdi Temizle (\(vm.selectedCount))")
+                    if vm.isCleaning {
+                        Text("Cleaning...")
+                    } else {
+                        Text("Clean Now (\(vm.selectedCount))")
+                    }
                 }
                 .font(.system(size: 13, weight: .semibold))
                 .frame(maxWidth: .infinity)
@@ -248,7 +250,7 @@ struct HomeView: View {
         HStack(spacing: 10) {
             Image(systemName: "checkmark.circle.fill")
                 .foregroundColor(.green)
-            Text("\(FileSizeFormatter.string(from: vm.lastCleanedSize)) başarıyla temizlendi!")
+            Text("\(FileSizeFormatter.string(from: vm.lastCleanedSize)) successfully cleaned!")
                 .font(.system(size: 12, weight: .medium))
             Spacer()
             Button {

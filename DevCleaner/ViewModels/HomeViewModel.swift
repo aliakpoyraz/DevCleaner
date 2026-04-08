@@ -29,7 +29,7 @@ final class HomeViewModel: ObservableObject {
 
     // MARK: - Disk Info
     struct DiskSpaceInfo {
-        var volumeName: String = "Sürücü"
+        var volumeName: String = "Drive"
         var total: Int64 = 0
         var free: Int64 = 0
         var used: Int64 = 0
@@ -48,7 +48,7 @@ final class HomeViewModel: ObservableObject {
 
         // Birim Adı
         let resourceValues = try? rootURL.resourceValues(forKeys: [.volumeNameKey])
-        let vName = resourceValues?.volumeName ?? "Macintosh HD"
+        let vName = resourceValues?.volumeName ?? "Drive"
 
         if let attributes = try? fileManager.attributesOfFileSystem(forPath: "/"),
            let total = attributes[.systemSize] as? Int64,
@@ -134,7 +134,7 @@ final class HomeViewModel: ObservableObject {
 
                 // İzin kontrolü (Sandbox'ta çöp kutusu dahil her şey izin bekler)
                 if !permissionService.isHomeFolderAuthorized {
-                    categories[index].status = .error("Erişim İzni Yok")
+                    categories[index].status = .error("Permission Required")
                     continue
                 }
 
@@ -170,7 +170,7 @@ final class HomeViewModel: ObservableObject {
 
         // İzin kontrolü
         if !permissionService.isHomeFolderAuthorized {
-            categories[index].status = .error("Erişim İzni Yok")
+            categories[index].status = .error("Permission Required")
             scanningCategoryName = ""
             isScanning = false
             return
@@ -238,8 +238,8 @@ final class HomeViewModel: ObservableObject {
     // MARK: - Sıralama
     private func sortCategories() {
         withAnimation(.spring(response: 0.4)) {
-            let trash = categories.filter { $0.name == "Çöp Kutusu" }
-            let others = categories.filter { $0.name != "Çöp Kutusu" }
+            let trash = categories.filter { $0.name == "Trash Bin" }
+            let others = categories.filter { $0.name != "Trash Bin" }
                 .sorted { $0.scannedSize > $1.scannedSize }
             
             categories = trash + others

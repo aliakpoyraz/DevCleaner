@@ -6,7 +6,9 @@ DevCleaner is a lightweight and high-performance dashboard designed for macOS-ba
 
 ### 📥 Download
 You can download the latest version of DevCleaner as a **.dmg** file from the **[Releases](https://github.com/aliakpoyraz/DevCleaner/releases)** section.
-
+<img src="DevCleaner/Setup.png" alt="DevCleaner Setup Guide" width="400" />
+<img src="DevCleaner/Screenshot.png" alt="DevCleaner Screenshot 1" width="400" />
+<img src="DevCleaner/Screenshot2.png" alt="DevCleaner Screenshot 2" width="400" />
 ### 🚀 Key Features
 - **Simplified Dashboard**: A single-view architecture for focused cleanup.
 - **Disk Space Insights**: Real-time display of your system drive name and used/total storage.

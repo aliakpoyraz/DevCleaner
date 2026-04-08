@@ -2,10 +2,12 @@ import SwiftUI
 
 @main
 struct DevCleanerApp: App {
+    @ObservedObject private var localizationManager = LocalizationManager.shared
 
     var body: some Scene {
         WindowGroup {
             HomeView()
+                .environment(\.locale, localizationManager.locale)
         }
         .windowStyle(.titleBar)
         .windowToolbarStyle(.unified(showsTitle: true))
@@ -21,6 +23,7 @@ struct DevCleanerApp: App {
         // Ayarlar sahnesi (⌘,)
         Settings {
             SettingsView()
+                .environment(\.locale, localizationManager.locale)
         }
     }
 }

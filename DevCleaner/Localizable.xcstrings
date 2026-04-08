@@ -1,0 +1,707 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "—" : {
+
+    },
+    "%@ / %@ used" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ / %@ kullanıldı"
+          }
+        }
+      }
+    },
+    "%@ successfully cleaned!" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ başarıyla temizlendi!"
+          }
+        }
+      }
+    },
+    "About" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hakkında"
+          }
+        }
+      }
+    },
+    "App Caches" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Uygulama Önbellekleri"
+          }
+        }
+      }
+    },
+    "App crash and system activity records." : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Uygulama çökmesi ve sistem aktivite kayıtları."
+          }
+        }
+      }
+    },
+    "Browser, Spotlight and other app temporary files." : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tarayıcı, Spotlight ve diğer uygulamaların geçici dosyaları."
+          }
+        }
+      }
+    },
+    "Cancel" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "İptal"
+          }
+        }
+      }
+    },
+    "Categories" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kategoriler"
+          }
+        }
+      }
+    },
+    "Clean" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Temizle"
+          }
+        }
+      }
+    },
+    "Clean Now (%lld)" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Şimdi Temizle (%lld)"
+          }
+        }
+      }
+    },
+    "cleanable space" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "temizlenebilir alan"
+          }
+        }
+      }
+    },
+    "Cleaning..." : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Temizleniyor..."
+          }
+        }
+      }
+    },
+    "Close" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kapat"
+          }
+        }
+      }
+    },
+    "CocoaPods Repos" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "CocoaPods Repoları"
+          }
+        }
+      }
+    },
+    "Database Logs" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Veritabanı Logları"
+          }
+        }
+      }
+    },
+    "Delete Mode" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Silme Modu"
+          }
+        }
+      }
+    },
+    "Deselect All" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tümünü Kaldır"
+          }
+        }
+      }
+    },
+    "Developer" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Geliştirici"
+          }
+        }
+      }
+    },
+    "Docker builder cache and system logs." : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Docker builder cache ve sistem logları."
+          }
+        }
+      }
+    },
+    "Docker Cache & Logs" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Docker Önbellek & Log"
+          }
+        }
+      }
+    },
+    "Done" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bitti"
+          }
+        }
+      }
+    },
+    "Drive" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sürücü"
+          }
+        }
+      }
+    },
+    "Error" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hata"
+          }
+        }
+      }
+    },
+    "Files deleted but still on system." : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Silinen ama sistemden atılmayan dosyalar."
+          }
+        }
+      }
+    },
+    "Files will be moved to the trash." : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dosyalar çöp kutusuna taşınacak."
+          }
+        }
+      }
+    },
+    "Flutter & Dart Cache" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Flutter & Dart Önbelleği"
+          }
+        }
+      }
+    },
+    "Grant Permission" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "İzin Ver"
+          }
+        }
+      }
+    },
+    "Homebrew Cache" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Homebrew Önbelleği"
+          }
+        }
+      }
+    },
+    "If turned off, files will be permanently deleted." : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kapatırsanız dosyalar kalıcı olarak silinir."
+          }
+        }
+      }
+    },
+    "Language" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dil"
+          }
+        }
+      }
+    },
+    "Mail Downloads" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mail İndirmeleri"
+          }
+        }
+      }
+    },
+    "Move to Trash" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Çöp Kutusuna Taşı"
+          }
+        }
+      }
+    },
+    "Node Modules (30g+)" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Node Modules (30g+)"
+          }
+        }
+      }
+    },
+    "Node modules folders not accessed for 30+ days." : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "30 günden uzun süredir erişilmeyen node_modules klasörleri."
+          }
+        }
+      }
+    },
+    "Not Scanned" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Taranmadı"
+          }
+        }
+      }
+    },
+    "OK" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tamam"
+          }
+        }
+      }
+    },
+    "Old CocoaPods repository caches." : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eski CocoaPods repository önbellekleri."
+          }
+        }
+      }
+    },
+    "Packages and temporary data downloaded by Homebrew." : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Homebrew tarafından indirilen paket arşivleri ve geçici veriler."
+          }
+        }
+      }
+    },
+    "Permission Required" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Erişim İzni Gerekli"
+          }
+        }
+      }
+    },
+    "PostgreSQL and MySQL system logs." : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "PostgreSQL ve MySQL sistem logları."
+          }
+        }
+      }
+    },
+    "Press 'Scan All' to scan your system" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sisteminizi taramak için 'Tümünü Tara'ya basın"
+          }
+        }
+      }
+    },
+    "Project Artifacts" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Proje Çıktıları"
+          }
+        }
+      }
+    },
+    "Pub-cache and Dart SDK temporary files." : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pub-cache ve Dart SDK geçici dosyaları."
+          }
+        }
+      }
+    },
+    "Ready" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hazır"
+          }
+        }
+      }
+    },
+    "Rescan" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yeniden Tara"
+          }
+        }
+      }
+    },
+    "Scan" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tara"
+          }
+        }
+      }
+    },
+    "Scan All" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tümünü Tara"
+          }
+        }
+      }
+    },
+    "Scanning..." : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Taranıyor..."
+          }
+        }
+      }
+    },
+    "Select All" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tümünü Seç"
+          }
+        }
+      }
+    },
+    "Selected %@ will be deleted." : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Seçili %@ silinecek."
+          }
+        }
+      }
+    },
+    "Settings" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ayarlar"
+          }
+        }
+      }
+    },
+    "Simulator Devices" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Simülatör Cihazları"
+          }
+        }
+      }
+    },
+    "Some files couldn't be deleted" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bazı dosyalar silinemedi"
+          }
+        }
+      }
+    },
+    "Swift Package Manager" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Swift Package Manager"
+          }
+        }
+      }
+    },
+    "SwiftPM downloaded package caches." : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "SwiftPM tarafından indirilmiş paket önbellekleri."
+          }
+        }
+      }
+    },
+    "System & App Logs" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sistem & Uygulama Logları"
+          }
+        }
+      }
+    },
+    "Temizle" : {
+
+    },
+    "Temporary attachments opened by Mail app." : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mail uygulamasının açtığı geçici ek dosyaları."
+          }
+        }
+      }
+    },
+    "Temporary data and logs from iOS Simulators." : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "iOS Simulator'lerinde biriken geçici veriler ve loglar."
+          }
+        }
+      }
+    },
+    "The app needs access to your home directory to scan system files." : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Uygulamanın sistem dosyalarını tarayabilmesi için ana dizine erişim vermeniz gerekiyor."
+          }
+        }
+      }
+    },
+    "This action cannot be undone. Files will be permanently deleted." : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bu işlem geri alınamaz. Dosyalar kalıcı olarak silinecek."
+          }
+        }
+      }
+    },
+    "Trash Bin" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Çöp Kutusu"
+          }
+        }
+      }
+    },
+    "Tümünü Tara" : {
+
+    },
+    "used" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "kullanıldı"
+          }
+        }
+      }
+    },
+    "Version" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Versiyon"
+          }
+        }
+      }
+    },
+    "View on GitHub" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "GitHub'da Görüntüle"
+          }
+        }
+      }
+    },
+    "Xcode build caches. Regenerates automatically." : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Xcode derleme önbellekleri. Yeniden açıldığında otomatik oluşur."
+          }
+        }
+      }
+    },
+    "Xcode DerivedData" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Xcode DerivedData"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}

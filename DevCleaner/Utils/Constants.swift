@@ -72,6 +72,7 @@ enum Constants {
     // MARK: - App Settings Keys
     enum UserDefaultsKeys {
         nonisolated static let useTrash = "useTrash"
+        nonisolated static let appLanguage = "appLanguage"
         nonisolated static let cleanHistory = "cleanHistory"
         nonisolated static let lastScanDate = "lastScanDate"
     }

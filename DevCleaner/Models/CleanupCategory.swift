@@ -12,10 +12,10 @@ enum ScanStatus: Equatable {
 
     var label: String {
         switch self {
-        case .idle:          return "Taranmadı"
-        case .scanning:      return "Taranıyor..."
-        case .done:          return "Tamam"
-        case .error(let m):  return "Hata: \(m)"
+        case .idle:          return "Not Scanned"
+        case .scanning:      return "Scanning..."
+        case .done:          return "Done"
+        case .error(let m):  return m
         }
     }
 }
@@ -63,91 +63,91 @@ extension CleanupCategory {
             CleanupCategory(
                 name: "Xcode DerivedData",
                 icon: "hammer.circle.fill",
-                description: "Xcode derleme önbellekleri. Yeniden açıldığında otomatik oluşur.",
+                description: "Xcode build caches. Regenerates automatically.",
                 color: .blue,
                 paths: [Constants.Paths.derivedData]
             ),
             CleanupCategory(
-                name: "Uygulama Önbellekleri",
+                name: "App Caches",
                 icon: "internaldrive.fill",
-                description: "Tarayıcı, Spotlight ve diğer uygulamaların geçici dosyaları.",
+                description: "Browser, Spotlight and other app temporary files.",
                 color: .orange,
                 paths: [Constants.Paths.userCaches]
             ),
             CleanupCategory(
-                name: "Sistem & Uygulama Logları",
+                name: "System & App Logs",
                 icon: "doc.text.fill",
-                description: "Uygulama çökmesi ve sistem aktivite kayıtları.",
+                description: "App crash and system activity records.",
                 color: .purple,
                 paths: [Constants.Paths.userLogs, Constants.Paths.systemLogs]
             ),
             CleanupCategory(
-                name: "Çöp Kutusu",
+                name: "Trash Bin",
                 icon: "trash.fill",
-                description: "Silinen ama sistemden atılmayan dosyalar.",
+                description: "Files deleted but still on system.",
                 color: .red,
                 paths: [Constants.Paths.trash]
             ),
             CleanupCategory(
                 name: "Node Modules (30g+)",
                 icon: "folder.badge.gearshape",
-                description: "30 günden uzun süredir erişilmeyen node_modules klasörleri.",
+                description: "Node modules folders not accessed for 30+ days.",
                 color: .indigo,
                 paths: [Constants.Paths.userHome]
             ),
             CleanupCategory(
                 name: "CocoaPods Repos",
                 icon: "shippingbox.fill",
-                description: "Eski CocoaPods repository önbellekleri.",
+                description: "Old CocoaPods repository caches.",
                 color: .brown,
                 paths: [Constants.Paths.cocoaPods]
             ),
             CleanupCategory(
                 name: "Swift Package Manager",
                 icon: "cube.box.fill",
-                description: "SwiftPM tarafından indirilmiş paket önbellekleri.",
+                description: "SwiftPM downloaded package caches.",
                 color: .cyan,
                 paths: [Constants.Paths.swiftPM]
             ),
             CleanupCategory(
                 name: "Simulator Devices",
                 icon: "iphone.circle.fill",
-                description: "iOS Simulator'lerinde biriken geçici veriler ve loglar.",
+                description: "Temporary data and logs from iOS Simulators.",
                 color: .teal,
                 paths: [Constants.Paths.simulatorDevices]
             ),
             CleanupCategory(
-                name: "Mail İndirmeleri",
+                name: "Mail Downloads",
                 icon: "envelope.open.fill",
-                description: "Mail uygulamasının açtığı geçici ek dosyaları.",
+                description: "Temporary attachments opened by Mail app.",
                 color: .pink,
                 paths: [Constants.Paths.mailDownloads]
             ),
             CleanupCategory(
                 name: "Database Logs",
                 icon: "externaldrive.badge.exclamationmark",
-                description: "PostgreSQL ve MySQL sistem logları.",
+                description: "PostgreSQL and MySQL system logs.",
                 color: .green,
                 paths: [Constants.Paths.postgresLog, Constants.Paths.mysqlLog]
             ),
             CleanupCategory(
                 name: "Homebrew Cache",
                 icon: "mug.fill",
-                description: "Homebrew tarafından indirilen paket arşivleri ve geçici veriler.",
+                description: "Packages and temporary data downloaded by Homebrew.",
                 color: .orange,
                 paths: [Constants.Paths.homebrew]
             ),
             CleanupCategory(
                 name: "Docker Cache & Logs",
                 icon: "square.stack.3d.down.right.fill",
-                description: "Docker builder cache ve sistem logları.",
+                description: "Docker builder cache and system logs.",
                 color: .blue,
                 paths: [Constants.Paths.docker]
             ),
             CleanupCategory(
                 name: "Flutter & Dart Cache",
                 icon: "bolt.ring.closed",
-                description: "Pub-cache ve Dart SDK geçici dosyaları.",
+                description: "Pub-cache and Dart SDK temporary files.",
                 color: .cyan,
                 paths: [Constants.Paths.flutter, Constants.Paths.dart]
             )
